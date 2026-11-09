@@ -180,7 +180,7 @@ docker compose pull && docker compose up -d
 
 Standalone:
 ```bash
-bash <(curl -Ls https://raw.githubusercontent.com/MHSanaei/3x-ui/main/install.sh)
+bash <(curl -Ls https://raw.githubusercontent.com/Tatasik/3x-ui/main/install.sh)
 ```
 
 Docker — поменять `image:` обратно на `ghcr.io/mhsanaei/3x-ui:latest` и `docker compose pull && up -d`.

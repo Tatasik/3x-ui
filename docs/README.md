@@ -17,7 +17,7 @@
 
 <p align="center">
   <a href="https://docs.sanaei.dev"><img src="https://img.shields.io/badge/docs-docs.sanaei.dev-22d3ee?style=flat-square" alt="Live site" /></a>
-  <a href="https://github.com/MHSanaei/3x-ui/actions/workflows/docs-ci.yml"><img src="https://github.com/MHSanaei/3x-ui/actions/workflows/docs-ci.yml/badge.svg" alt="CI" /></a>
+  <a href="https://github.com/Tatasik/3x-ui/actions/workflows/docs-ci.yml"><img src="https://github.com/Tatasik/3x-ui/actions/workflows/docs-ci.yml/badge.svg" alt="CI" /></a>
   <a href="LICENSE"><img src="https://img.shields.io/badge/license-GPL--3.0-blue?style=flat-square" alt="License: GPL-3.0" /></a>
   <img src="https://img.shields.io/badge/Next.js-16-black?style=flat-square&logo=next.js" alt="Next.js 16" />
   <img src="https://img.shields.io/badge/Fumadocs-16-0ea5e9?style=flat-square" alt="Fumadocs 16" />
