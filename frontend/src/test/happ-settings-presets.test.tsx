@@ -72,9 +72,7 @@ function renderSettings(isMobile = false) {
 function openPresets() {
   // The panel adds a second combobox (RoscomVPN routing profile source), so
   // the preset select must be addressed by its accessible name.
-  const select = screen
-    .getByRole('combobox', { name: 'Routing Presets' })
-    .closest('.ant-select');
+  const select = screen.getByRole('combobox', { name: 'Routing Presets' }).closest('.ant-select');
   if (!select) throw new Error('Routing preset select not found');
   fireEvent.mouseDown(select.querySelector('.ant-select-selector') ?? select);
   return Array.from(
