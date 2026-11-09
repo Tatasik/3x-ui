@@ -4,13 +4,13 @@
 <tr>
 <td align="center" width="25%"><a href="https://github.com/hydraponique/roscomvpn-geoip">RoscomVPN GeoIP</a></td>
 <td align="center" width="25%"><a href="https://github.com/hydraponique/roscomvpn-geosite">RoscomVPN Geosite</a></td>
-<td align="center" width="25%"><a href="https://github.com/hydraponique/3x-ui"><b>🚀 3x-ui · RoscomVPN</b></a></td>
+<td align="center" width="25%"><a href="https://github.com/Tatasik/3x-ui"><b>🚀 3x-ui · RoscomVPN</b></a></td>
 <td align="center" width="25%"><a href="https://github.com/hydraponique/roscomvpn-routing">RoscomVPN Routing</a></td>
 </tr>
 <tr>
 <td align="center"><img src="https://img.shields.io/github/downloads/hydraponique/roscomvpn-geoip/total.svg" alt="Downloads"> <img src="https://data.jsdelivr.com/v1/package/gh/hydraponique/roscomvpn-geoip/badge" alt="jsDelivr"></td>
 <td align="center"><img src="https://img.shields.io/github/downloads/hydraponique/roscomvpn-geosite/total.svg" alt="Downloads"> <img src="https://data.jsdelivr.com/v1/package/gh/hydraponique/roscomvpn-geosite/badge" alt="jsDelivr"></td>
-<td align="center"><img src="https://img.shields.io/github/v/release/hydraponique/3x-ui.svg" alt="Release"> <img src="https://img.shields.io/github/downloads/hydraponique/3x-ui/total.svg" alt="Downloads"> <img src="https://img.shields.io/badge/Docker-ghcr.io-blue.svg?logo=docker" alt="Docker"></td>
+<td align="center"><img src="https://img.shields.io/github/v/release/Tatasik/3x-ui.svg" alt="Release"> <img src="https://img.shields.io/github/downloads/Tatasik/3x-ui/total.svg" alt="Downloads"> <img src="https://img.shields.io/badge/Docker-ghcr.io-blue.svg?logo=docker" alt="Docker"></td>
 <td align="center"><img src="https://img.shields.io/github/stars/hydraponique/roscomvpn-routing.svg" alt="Stars"> <img src="https://img.shields.io/badge/Happ-blue.svg" alt="Happ"> <img src="https://img.shields.io/badge/Mihomo-grey.svg" alt="Mihomo"> <img src="https://img.shields.io/badge/Incy-darkgreen.svg" alt="Incy"></td>
 </tr>
 </table>
@@ -125,7 +125,7 @@ bash: x-ui: command not found
 **Лучший выбор**, если у вас уже стоит апстрим или предыдущая версия форка. Не задаёт вопросов, ничего не сбрасывает — просто берёт логин/пароль/порт из существующей базы и обновляет панель.
 
 ```bash
-bash <(curl -Ls https://raw.githubusercontent.com/hydraponique/3x-ui/main/update.sh)
+bash <(curl -Ls https://raw.githubusercontent.com/Tatasik/3x-ui/main/update.sh)
 ```
 
 | Шаг | Действие |
@@ -145,7 +145,7 @@ bash <(curl -Ls https://raw.githubusercontent.com/hydraponique/3x-ui/main/update
 То же что способ 1, но **спросит** username / password / порт панели — удобно, если ставите впервые или хотите поменять учётные данные.
 
 ```bash
-bash <(curl -Ls https://raw.githubusercontent.com/hydraponique/3x-ui/main/install.sh)
+bash <(curl -Ls https://raw.githubusercontent.com/Tatasik/3x-ui/main/install.sh)
 ```
 
 База, сертификаты, inbounds, клиенты, подписки — **остаются** (как и в способе 1). Меняется только бинарь, geo-файлы и `x-ui.sh`. Если на сервере уже что-то стоит — это просто обновление с возможностью переустановить логин/пароль.
@@ -161,7 +161,7 @@ bash <(curl -Ls https://raw.githubusercontent.com/hydraponique/3x-ui/main/instal
 services:
   3xui:
 -   image: ghcr.io/mhsanaei/3x-ui:latest
-+   image: ghcr.io/hydraponique/3x-ui:latest
++   image: ghcr.io/Tatasik/3x-ui:latest
 ```
 
 Затем:
