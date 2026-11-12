@@ -17,7 +17,11 @@
 
 # 🚀 3x-ui · RoscomVPN edition
 
-### Форк [3x-ui](https://github.com/MHSanaei/3x-ui) (база: апстрим **v3.11.0**), в который встроен свежий [RoscomVPN-роутинг](https://github.com/hydraponique/roscomvpn-routing)
+### Синхронизированный форк [3x-ui](https://github.com/MHSanaei/3x-ui) — оригинальный проект и автор: **[@MHSanaei](https://github.com/MHSanaei)**
+
+Это синхронизированное с апстримом продолжение: свежие релизы [MHSanaei/3x-ui](https://github.com/MHSanaei/3x-ui) подтянуты в форк, встроенный [RoscomVPN-роутинг](https://github.com/hydraponique/roscomvpn-routing) сохраняется. Текущая база: upstream **v3.11.0** ↔ форк **v6.11.1** (версии форка `v6.x.y` соответствуют апстриму `v3.x.y`).
+
+Происхождение: базовая панель — оригинальный проект **[@MHSanaei](https://github.com/MHSanaei)**, RoscomVPN-надстройка (роутинг, geo-базы, Happ-профили) — **[@hydraponique](https://github.com/hydraponique)**. Его форк давно не получал обновлений панели, поэтому здесь — поддерживаемое продолжение с синхронизацией релизов апстрима. Со своей стороны наверх предложен [PR #1](https://github.com/hydraponique/3x-ui/pull/1): если его примут, этот форк будет отправлен в архив.
 
 **Для кого:** хочется поднять свой VPN под 🇷🇺 / 🇧🇾 без танцев с правилами роутинга и обновлением geo-файлов.
 **Сохраняет всё:** база, конфиги, клиенты, подписки, сертификаты — переходите на форк и обратно одной командой.
@@ -200,6 +204,8 @@ Docker — поменять `image:` обратно на `ghcr.io/mhsanaei/3x-ui
 
 Этот форк — лишь надстройка. Вся базовая мощь панели — заслуга **[@MHSanaei](https://github.com/MHSanaei)** и его проекта **[3x-ui](https://github.com/MHSanaei/3x-ui)** (GPL-3.0).
 
+RoscomVPN-надстройка (роутинг, geo-базы, Happ-профили) — заслуга **[@hydraponique](https://github.com/hydraponique)**; этот репозиторий — продолжение его [RoscomVPN-сборки](https://github.com/hydraponique/3x-ui).
+
 Если RoscomVPN-надстройка вам не нужна — ставьте оригинал и поддержите автора:
 
 <a href="https://www.buymeacoffee.com/MHSanaei" target="_blank">
@@ -221,7 +227,5 @@ Docker — поменять `image:` обратно на `ghcr.io/mhsanaei/3x-ui
 ### Понравилось — ставь ⭐
 
 **Сделано с ❤️ к свободному интернету**
-
-`USDT TRC20: TMu3N2ZjK5omJ7n3WAj5MNCSM5querBXsR`
 
 </div>
