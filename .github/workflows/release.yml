@@ -198,6 +198,14 @@ jobs:
           file_glob: true
           overwrite: true
           prerelease: false
+          # Used only when the action creates the release (tag pushed without a
+          # web-made release); a body edited on the release page is kept.
+          body: |
+            Стабильный релиз форка 3x-ui для RoscomVPN (репозиторий Tatasik/3x-ui).
+
+            Все архивы собраны GitHub Actions из кода этого репозитория; рядом лежат контрольные суммы `*.sha256`.
+            Происхождение: [MHSanaei/3x-ui](https://github.com/MHSanaei/3x-ui) → [hydraponique/3x-ui](https://github.com/hydraponique/3x-ui) (RoscomVPN) → этот форк.
+            Установка: `bash <(curl -Ls https://raw.githubusercontent.com/Tatasik/3x-ui/main/install.sh)`
 
   # =================================
   #  Windows Build
@@ -341,6 +349,12 @@ jobs:
           file_glob: true
           overwrite: true
           prerelease: false
+          body: |
+            Стабильный релиз форка 3x-ui для RoscomVPN (репозиторий Tatasik/3x-ui).
+
+            Все архивы собраны GitHub Actions из кода этого репозитория; рядом лежат контрольные суммы `*.sha256`.
+            Происхождение: [MHSanaei/3x-ui](https://github.com/MHSanaei/3x-ui) → [hydraponique/3x-ui](https://github.com/hydraponique/3x-ui) (RoscomVPN) → этот форк.
+            Установка: `bash <(curl -Ls https://raw.githubusercontent.com/Tatasik/3x-ui/main/install.sh)`
 
   # =================================
   #  Rolling dev channel (per-commit)
@@ -387,12 +401,12 @@ jobs:
             return 1
           }
           short="${COMMIT::8}"
-          notes="Rolling development build — installs via the panel's Dev update channel.
+          notes="Катальная сборка разработки — устанавливается через Dev-канал обновлений панели.
 
           commit=${COMMIT}
           built=$(date -u +%Y-%m-%dT%H:%M:%SZ)
 
-          Automated per-commit build from main. Not a stable release."
+          Автоматическая сборка каждого коммита из main. Не является стабильным релизом."
 
           # Force-move the dev-latest tag to this commit so the release tracks it.
           git tag -f dev-latest "${COMMIT}"
